@@ -1,0 +1,52 @@
+*vim-markdown* Enhanced vim markdown syntax
+
+==============================================================================
+CONTENTS                                                *vim-markdown-contents*
+
+  Introduction......................................|vim-markdown-introduction|
+  Options................................................|vim-markdown-options|
+
+==============================================================================
+INTRODUCTION                                        *vim-markdown-introduction*
+
+This plugin is forked from tpope/vim-markdown.
+
+==============================================================================
+OPTIONS                                                  *vim-markdown-options*
+
+*g:markdown_conceal_small*
+  Whether conceal small delimiters or not. Such as `**`, `*`, `~~`. This
+  option respect vim's |conceallevel|.
+
+  Type: |Boolean|
+  Default: `1`
+
+*g:markdown_conceal_link*
+  Whether conceal links or not. This option respect vim's |conceallevel|.
+
+  Type: |Boolean|
+  Default: `1`
+
+*g:markdown_conceal_image_cchar*
+  The character shown in place of the image link marker `!`.
+
+  Type: |String|
+  Default: `▨`
+
+*g:markdown_minlines*
+  The minimum synchronized lines for syntax highlight. Small value may cause
+  collapsed highlighting at large fenced code block.
+
+  Type: |Number|
+  Default: `50`
+
+*g:markdown_fenced_languages*
+  A list of filetypes. Turn on syntax highlighting for them in code block.
+
+  Type: |List|
+  Default: `[]`
+
+  Example: >
+    let g:markdown_fenced_languages = ['html', 'python', 'bash=sh']
+
+vim:tw=78:ts=8:ft=help:norl:
